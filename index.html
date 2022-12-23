@@ -79,18 +79,18 @@
             <div class="content">
                 <div class="vs-teams">
                     <ul>
-                        <li><img class="versus-img" src="/images/logos/g2e.png" alt="not-again"></li>
+                        <li><img class="versus-img" src="images/logos/g2e.png" alt="not-again"></li>
                         <li>G2 ESPORTS</li>
                     </ul>
                     <br>
                     <ul>
-                        <li><img class="versus-img" src="/images/logos/nan.png" alt="not-again"></li>
+                        <li><img class="versus-img" src="images/logos/nan.png" alt="not-again"></li>
                         <li>NATUS VINCERE</li>
                     </ul>
                 </div>
                 <div class="score">
                     <hr style="display: inline-block; transform: rotate(90deg); color:red; width:12vh">
-                    <img style="height: 5vh;" src="/images/tv.png" alt="">
+                    <img style="height: 5vh;" src="images/tv.png" alt="">
                 </div>
             </div>
         </div>
@@ -103,18 +103,18 @@
             <div class="content">
                 <div class="vs-teams">
                     <ul>
-                        <li><img class="versus-img" src="/images/logos/sentinals.png" alt="not-again"></li>
+                        <li><img class="versus-img" src="images/logos/sentinals.png" alt="not-again"></li>
                         <li>SENTINELS</li>
                     </ul>
                     <br>
                     <ul>
-                        <li><img class="versus-img" src="/images/logos/100t.png" alt="not-again"></li>
+                        <li><img class="versus-img" src="images/logos/100t.png" alt="not-again"></li>
                         <li>100T</li>
                     </ul>
                 </div>
                 <div class="score">
                     <hr style="display: inline-block; transform: rotate(90deg); color:red; width:12vh">
-                    <img style="height: 5vh;" src="/images/tv.png" alt="">
+                    <img style="height: 5vh;" src="images/tv.png" alt="">
                 </div>
             </div>
         </div>
@@ -126,18 +126,18 @@
             <div class="content">
                 <div class="vs-teams">
                     <ul>
-                        <li><img class="versus-img" src="/images/logos/fnc.png" alt="not-again"></li>
+                        <li><img class="versus-img" src="images/logos/fnc.png" alt="not-again"></li>
                         <li>FNC</li>
                     </ul>
                     <br>
                     <ul>
-                        <li><img class="versus-img" src="/images/logos/ig.png" alt="not-again"></li>
+                        <li><img class="versus-img" src="images/logos/ig.png" alt="not-again"></li>
                         <li>IG</li>
                     </ul>
                 </div>
                 <div class="score">
                     <hr style="display: inline-block; transform: rotate(90deg); color:red; width:12vh">
-                    <img style="height: 5vh;" src="/images/tv.png" alt="">
+                    <img style="height: 5vh;" src="images/tv.png" alt="">
                 </div>
             </div>
         </div>
@@ -147,17 +147,13 @@
 </div>
 
 <!-- -------------------------------------------------- -->
-<style>
-    
-</style>
-
 <div class="players">
     <br>
     <div class="control">
         <div class="name"><h2>PLAYERS</h2></div>
         <div class="controls">
-            <img src="/images/arrows1.png" alt="">
-            <img src="/images/arrows2.png" alt="">
+            <img onclick="slideRight()" src="images/arrows1.png" alt="">
+            <img onclick="slideLeft()" src="images/arrows2.png" alt="">
         </div>
     </div>
     <br>
@@ -194,20 +190,59 @@
                 <a target="_blank" href="https://www.instagram.com/karimbenzema/?hl=en"><h3>Karim Benzema</h3></a>
             </div>
         </div>
-
-
-
-<!-- 
-        <div class="player-card" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/350/470/398/soccer-neymar-brazilian-paris-saint-germain-f-c-wallpaper-preview.jpg');">
-        
+        <div class="player-card">
+            <div class="dp" style="background-image: url('https://wallpaperaccess.com/full/1971071.jpg');">
+                
+            </div>
+            <div class="information effect">
+                <a target="_blank" href="https://www.instagram.com/3gerardpique/?hl=en"><h3>Gerard Piqué</h3></a>
+            </div>
         </div>
-        <div class="player-card" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/558/12/1019/soccer-luis-suarez-fc-barcelona-luis-suarez-wallpaper-preview.jpg');">
-        
+        <div class="player-card">
+            <div class="dp" style="background-image: url('https://cdn.thefootballlovers.com/wp-content/uploads/2020/04/cristiano-ronaldo-juventus-wallpaper-2020-4K-HD-scaled.jpg');">
+
+            </div>
+            <div class="information effect">
+                <a target="_blank" href="https://www.instagram.com/cristiano/?hl=en"><h3>Cristiano Ronaldo</h3></a>
+            </div>
         </div>
-        <div class="player-card" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/881/819/618/soccer-karim-benzema-french-real-madrid-c-f-wallpaper-preview.jpg');">
-        
-        </div> -->
+        <div class="player-card">
+            <div class="dp" style="background-image: url('https://wallpaperaccess.com/full/6451460.jpg');">
+
+            </div>
+            <div class="information effect">
+                <a target="_blank" href="https://www.instagram.com/k.mbappe/?hl=en"><h3>Kylian Mbappé</h3></a>
+            </div>
+        </div>
+        <div class="player-card">
+            <div class="dp" style="background-image: url('https://w0.peakpx.com/wallpaper/16/916/HD-wallpaper-sergio-ramos-soccer-sport-real-madrid-football-captain-spanish.jpg');">
+
+            </div>
+            <div class="information effect">
+                <a target="_blank" href="https://www.instagram.com/sergioramos/?hl=en"><h3>Sergio Ramos</h3></a>
+            </div>
+        </div>
+
     </div>
+    <script>
+        let slider = document.querySelector(".playercards");
+        function slideLeft(){
+            console.log("hello");
+            slider.scrollBy({
+                top: 0,
+                left: +600,
+                behavior: 'smooth'
+              }); 
+        }
+        function slideRight(){
+            console.log("hello");
+            slider.scrollBy({
+                top: 0,
+                left: -600,
+                behavior: 'smooth'
+              }); 
+        }
+    </script>
 </div>
 <br>
 <!-- ---------------------------------------------------->
@@ -246,31 +281,31 @@
     <div class="team-box">
         <a href="https://liquipedia.net/pubgmobile/Team_SouL" target="_blank">
             <div class="teams team1">
-                <div class="logo" style="background-image: url('/images/logos/soul.png')"></div>
+                <div class="logo" style="background-image: url('images/logos/soul.png')"></div>
                 <p>Team <br><b>SOUL</b></p>
             </div>
         </a>
         <a href="https://liquipedia.net/pubgmobile/TSM" target="_blank">
             <div class="teams team2">
-                <div class="logo" style="background-image: url('/images/logos/tsm.png')"></div>
+                <div class="logo" style="background-image: url('images/logos/tsm.png')"></div>
                 <p>Team <br><b>TSM</b></p>
             </div>
         </a>
         <a href="https://liquipedia.net/pubgmobile/GodLike_Esports" target="_blank">
             <div class="teams team3">
-                <div class="logo" style="background-image: url('/images/logos/gl.png')"></div>
+                <div class="logo" style="background-image: url('images/logos/gl.png')"></div>
                 <p>Team <br><b>GODLIKE</b></p>
             </div>
         </a>
         <a href="https://liquipedia.net/pubgmobile/7Sea_Esports" target="_blank">
             <div class="teams team4">
-                <div class="logo" style="background-image: url('/images/logos/7seas.png')"></div>
+                <div class="logo" style="background-image: url('images/logos/7seas.png')"></div>
                 <p>Team <br><b>7SEAS</b></p>
             </div>
         </a>
         <a href="https://liquipedia.net/valorant/Enigma_Gaming" target="_blank">
             <div class="teams team5">
-                <div class="logo" style="background-image: url('/images/logos/enigma.png')"></div>
+                <div class="logo" style="background-image: url('images/logos/enigma.png')"></div>
                 <p>Team <br><b>ENIGMA</b></p>
             </div>
         </a>
@@ -283,8 +318,8 @@
 
 <div class="testimonial-container">
     <div class="progress-bar"></div>
-    <div class="fas fa-quote-left fa-quote"style="transform: rotate(180deg);"><img src="/images/apos.png" alt=""></div>
-    <div class="fas fa-quote-right fa-quote"><img src="/images/apos.png" alt=""></div>
+    <div class="fas fa-quote-left fa-quote"style="transform: rotate(180deg);"><img src="images/apos.png" alt=""></div>
+    <div class="fas fa-quote-right fa-quote"><img src="images/apos.png" alt=""></div>
     <p class="testimonial">
       A group of ex-Riot developers formed a new studio called Odyssey Interactive, and their first game is Omega Strikers. We played it...and couldn't stop playing it! Find out why we think this esports contender could be your next big multiplayer obsession. Viola Davis anchors an excellent ensemble in this rousing period piece about the Agojie warriors of Dahomey. The end is nigh! @DRX_VS & @OpTic have one last chance to go big or go home.
     </p>
@@ -331,14 +366,14 @@
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt=""></a>
         </div>
         <div class="f-logo">
-            <a href="#"><img class="logoimg" src="/images/logo1.png" alt=""></a>
+            <a href="#"><img class="logoimg" src="images/logo1.png" alt=""></a>
         </div>
         <p>© 2022, Copyright: ESportle : Tanishq Bhatt, Aayush  Dubey & Siddhant Sharma.</p>
         <div class="navigation">
-            <a href="/index.html">Home</a>
-            <a href="/news.html">News</a>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
             <!-- <a href="/shop.html">Shop</a> -->
-            <a href="/shop.html">Games</a>
+            <a href="shop.html">Games</a>
         </div>
         <div class="end">
             <hr style="margin-bottom:5vh;">
